@@ -1,71 +1,130 @@
+:root {
+    --light-white: #ecebe9;
+    --light-blue: #86c1fe;
+    --light-red: #ed837f;
+    --light-green: #8bd0a1; 
+    --light-yellow: #f7c117;
+    --light-black: #1b1919;
+}
+
 body {
-    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(to right, var(--light-white) 0%, var(--light-white) 100%);
     font-family: 'DM Sans', sans-serif;
     text-align: center;
 }
 
+/* Start of Scrollbar Style */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #fff;
+    background: var(--light-white);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #65FEEC;
+    background: var(--light-blue);
 }
+/* End of scrollbar style*/
 
+
+/* Start of Header Style */
 .header-image {
-    display: inline-block;
     margin: 2rem auto;
-    width: 10rem;
-    clip-path: circle(50%);
-    background: #fff;
+    width: 100%;
+    background: var(--light-white);
 }
 
-.instagram-config {
-    margin: 0.7rem 0 1rem 0;
-    line-height: 0.5;
+.p-red {
+    color: var(--light-red);
 }
 
-.user-name {
-    color: #fff;
-    font-size: 17px;
+.p-blue {
+    color: var(--light-blue);
+
 }
 
-.bio {
-    font-size: 16px;
-    font-weight: 400;
+.p-yellow {
+    color: var(--light-yellow);
 }
 
+.p-green {
+    color: var(--light-green);
+}
+/* End of header style */
+
+
+/* Start of container links style */
 .links-container button {
-    width: 70%;
+    width: 55%;
     background: none;
-    color: #fff;
+    color: var(--light-white);
     padding: 1rem;
     margin: 1rem;
-    border: 1px solid #fff;
-    border-radius: 30px;
+    border: 1px solid var(--light-white);
+    border-radius: 6px;
     cursor: pointer;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
     transition: 500ms;
 }
+/* End of container links style*/
 
-.links-container button:hover {
-    background: #fff;
-    color: #4facfe;
-    transition: 500ms;
-} 
 
+/* Start of buttons style */
+#whatsapp {
+    background: var(--light-red);
+}
+
+#whatsapp:hover {
+    background: var(--light-yellow);
+}
+
+#phone-number {
+    background: var(--light-blue);
+}
+
+#phone-number:hover {
+    background: var(--light-green);
+}
+
+#maps {
+    background: var(--light-yellow);
+}
+
+#maps:hover {
+    background: var(--light-red);
+}
+
+#facebook {
+    background: var(--light-green);
+}
+
+#facebook:hover {
+    background: var(--light-blue);
+}
+/* End of buttons styles*/
+
+/* Start of footer style*/
 .footer-image {
-    width: 10rem;
+    width: 100%;
     margin-bottom: 1rem;
     clip-path: circle(50%);
 }
 
+.footer-links-buttons button {
+    background: none;
+    border: none;
+    margin-top: 3rem;
+}
+
 .copyright {
-    color: #fff;
+    color: var(--light-black);
     text-decoration: none;
 }
+
+.dev-information a{
+    text-decoration: none;
+    color: var(--light-red);
+}
+/* End of footer style */
